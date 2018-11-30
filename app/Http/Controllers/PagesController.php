@@ -26,4 +26,9 @@ class PagesController extends Controller
         return view('panel_admin.forms');
     }
 
+    public function configuraciones(){
+        return view('panel_admin.configuraciones');
+
+    }
+
 }

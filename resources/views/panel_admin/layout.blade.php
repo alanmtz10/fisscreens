@@ -111,6 +111,9 @@
                             <a href="{{ route('participantes') }}"><i class="fas fa-users"></i> Participantes</a>
                         </li>
                         <li>
+                            <a href="{{ route('formularios') }}"><i class="fa fa-edit fa-fw"></i> Formularios</a>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Estadísticas<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -123,7 +126,7 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="{{ route('formularios') }}"><i class="fa fa-edit fa-fw"></i> Formularios</a>
+                            <a href="{{ route('configuraciones') }}"><i class="fas fa-wrench"></i> Configuraciones</a>
                         </li>
 
                     </ul>

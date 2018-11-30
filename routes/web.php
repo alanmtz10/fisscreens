@@ -16,4 +16,5 @@ Route::get('/grafico/linea', ['as'=>'grafLin','uses'=>'PagesController@grafLinea
 Route::get('/grafico/otros', ['as'=>'grafOtr','uses'=>'PagesController@grafOtr']);
 Route::get('/participantes', ['as'=>'participantes','uses'=>'PagesController@participante']);
 Route::get('/formularios', ['as'=>'formularios','uses'=>'PagesController@formularios']);
+Route::get('/configuraciones', ['as'=>'configuraciones','uses'=>'PagesController@configuraciones']);
 
