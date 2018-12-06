@@ -31,4 +31,17 @@ class PagesController extends Controller
 
     }
 
+    public function login(){
+        return view('panel_admin.login');
+
+    }
+
+    public function auth(Request $request){
+        if($request->email == 'admin'){
+            return view('panel_admin.index');
+        }else{
+            return view('user.index');
+        }
+    }
+
 }

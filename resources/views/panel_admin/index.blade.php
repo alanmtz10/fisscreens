@@ -259,7 +259,7 @@ Inicio
                     <ul class="chat">
                         <li class="left clearfix">
                             <span class="chat-img pull-left">
-                                <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px" height="50px" style="background: rgb(218,255,254)" />
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">
@@ -276,7 +276,7 @@ Inicio
                         </li>
                         <li class="right clearfix">
                             <span class="chat-img pull-right">
-                                <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px" height="50px" style="background: rgb(232,197,144)" />
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">
@@ -292,7 +292,7 @@ Inicio
                         </li>
                         <li class="left clearfix">
                             <span class="chat-img pull-left">
-                                <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px" height="50px" style="background: rgb(162,147,232)" />
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">
@@ -308,7 +308,7 @@ Inicio
                         </li>
                         <li class="right clearfix">
                             <span class="chat-img pull-right">
-                                <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px" height="50px" style="background: rgb(232,197,144)" />
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">
