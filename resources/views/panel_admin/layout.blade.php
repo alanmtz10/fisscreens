@@ -93,7 +93,7 @@
                     <li><a href="{{ route('configuraciones') }}"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesion</a>
+                    <li><a href="{{ route('inicioPage') }}"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesion</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->

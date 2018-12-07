@@ -29,32 +29,32 @@
             </div>
             <!-- /.col-lg-6 -->
             <div class="col-lg-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Comparativa con otros años 
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Comparativa con otros años 
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="morris-bar-chart"></div>
+                        </div>
+                        <!-- /.panel-body -->
                     </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        <div id="morris-bar-chart"></div>
-                    </div>
-                    <!-- /.panel-body -->
+                    <!-- /.panel -->
                 </div>
-                <!-- /.panel -->
-            </div>
             
             <!-- /.col-lg-6 -->
             <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Donut Chart Example
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Donut Chart Example
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                                <div id="morris-donut-chart"></div>
+                            </div>
+                        <!-- /.panel-body -->
                     </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        <div id="morris-donut-chart"></div>
-                    </div>
-                    <!-- /.panel-body -->
-                </div>
-                <!-- /.panel -->
+                    <!-- /.panel -->
             </div>
             
         </div>

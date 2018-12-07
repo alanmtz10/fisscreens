@@ -1,9 +1,9 @@
 @extends('page.layout')
 
 @section('titulo')
-    Inicio
+Inicio
 @endsection
 
 @section('contenido')
-    
+
 @endsection

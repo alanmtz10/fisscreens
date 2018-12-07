@@ -57,7 +57,8 @@
                                 <!-- Change this to a button or input when using this as a form -->
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Iniciar Sesion</button>
                                 <br>
-                            <a href="{{ route('inicioPage') }}">Regresar al inicio</a>
+                                <a href="{{ route('inicioPage') }}">Regresar al inicio</a>
+                                <a href="{{ route('inicioPage') }}" style="margin-left:75 px">Olvide mi contraseña</a>
                             </fieldset>
                         </form>
                     </div>

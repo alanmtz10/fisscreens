@@ -40,7 +40,7 @@ class PagesController extends Controller
         if($request->email == 'admin'){
             return view('panel_admin.index');
         }else{
-            return redirect('/');
+            return redirect('/user'); 
         }
     }
 
