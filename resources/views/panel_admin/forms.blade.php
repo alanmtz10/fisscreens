@@ -41,33 +41,51 @@ Formularios
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-lg-5">
+                                        <label>Correo electronico: </label>
+                                        <input type="email" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="custom-control custom-checkbox col-lg-1">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    </div>
+                                    <div class="form-group col-lg-5">
                                         <label>Direccion: </label>
                                         <input class="form-control" placeholder="">
                                     </div>
                                     <div class="custom-control custom-checkbox col-lg-1">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
                                     </div>
+
+                                </div>
+                                <div class="form-row">
                                     <div class="form-group col-lg-5">
                                         <label>Ciudad: </label>
                                         <input class="form-control" placeholder="">
                                     </div>
                                     <div class="custom-control custom-checkbox col-lg-1">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        </div>
-                                </div>
-                                <div class="form-row">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    </div>
                                     <div class="form-group col-lg-5">
                                         <label>Estado: </label>
                                         <input class="form-control" placeholder="">
                                     </div>
                                     <div class="custom-control custom-checkbox col-lg-1">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        </div>
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    </div>
+
+                                </div>
+                                <div class="form-row">
                                     <div class="form-group col-lg-5">
                                         <label>C.P.: </label>
                                         <input class="form-control" placeholder="">
                                     </div>
                                     <div class="custom-control custom-checkbox col-lg-1">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    </div>
+                                    <div class="form-group col-lg-5">
+                                            <label>Foto: </label>
+                                            <input type="file">
+                                        </div>
+                                        <div class="custom-control custom-checkbox col-lg-1">
                                             <input type="checkbox" class="custom-control-input" id="customCheck2">
                                         </div>
                                 </div>

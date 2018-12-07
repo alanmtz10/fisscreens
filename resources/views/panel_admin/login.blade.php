@@ -11,18 +11,18 @@
 
     <title>Iniciar Sesión</title>
 
-     <!-- Bootstrap Core CSS -->
-     <link href="{{ asset("/vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
-     <!-- MetisMenu CSS -->
-     <link href="{{ asset("/vendor/metisMenu/metisMenu.min.css") }}" rel="stylesheet">
-     <!-- Custom CSS -->
-     <link href=" {{ asset("/dist/css/sb-admin-2.css") }}" rel="stylesheet">
-     <!-- Morris Charts CSS -->
-     <link href="{{ asset("/vendor/morrisjs/morris.css") }}" rel="stylesheet">
-     <!-- Custom Fonts -->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-         crossorigin="anonymous">
-     <link href="{{ asset("/vendor/font-awesome/css/font-awesome.min.css") }}" rel="stylesheet" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ asset("/vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="{{ asset("/vendor/metisMenu/metisMenu.min.css") }}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href=" {{ asset("/dist/css/sb-admin-2.css") }}" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="{{ asset("/vendor/morrisjs/morris.css") }}" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="{{ asset("/vendor/font-awesome/css/font-awesome.min.css") }}" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,17 +43,21 @@
                         <h3 class="panel-title">Ingrese su usuario y contraseña</h3>
                     </div>
                     <div class="panel-body">
-                    <form role="form" method="POST" action="{{ route('auth') }}">
+                        <form role="form" method="POST" action="{{ route('auth') }}">
                             @csrf
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Usuario" name="email" type="text" autofocus>
+                                    <input class="form-control" placeholder="Usuario" name="email" type="text"
+                                        autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Contraseña" name="password" type="password" value="">
+                                    <input class="form-control" placeholder="Contraseña" name="password" type="password"
+                                        value="">
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Iniciar Sesion</button>
+                                <br>
+                            <a href="{{ route('inicioPage') }}">Regresar al inicio</a>
                             </fieldset>
                         </form>
                     </div>

@@ -1,7 +1,7 @@
 @extends('panel_admin.layout')
 
 @section('titulo')
-Inicio
+Panel de administración
 @endsection
 
 @section('contenido')
@@ -19,15 +19,16 @@ Inicio
                 <div class="panel-heading">
                     <div class="row">
                         <div class="col-xs-3">
-                            <i class="fa fa-comments fa-5x"></i>
+
+                            <i class="fas fa-file-alt fa-5x"></i>
                         </div>
                         <div class="col-xs-9 text-right">
                             <div class="huge">26</div>
-                            <div>Nuevos mensajes</div>
+                            <div>Nuevas solicitudes</div>
                         </div>
                     </div>
                 </div>
-                <a href="#">
+                <a href="{{ route('solicitudes') }}">
                     <div class="panel-footer">
                         <span class="pull-left">Ver detalles</span>
                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -45,7 +46,7 @@ Inicio
                         </div>
                         <div class="col-xs-9 text-right">
                             <div class="huge">2</div>
-                            <div>Conferencias en curso</div>
+                            <div>Eventos próximos</div>
                         </div>
                     </div>
                 </div>
@@ -137,42 +138,42 @@ Inicio
                                     <tbody>
                                         <tr>
                                             <td>3326</td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                                            <td>Conferencia 1.</td>
                                             <td>08:00 AM</td>
                                         </tr>
                                         <tr>
                                             <td>3325</td>
-                                            <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</td>
+                                            <td>Conferencia 2.</td>
                                             <td>08:30 AM</td>
                                         </tr>
                                         <tr>
                                             <td>3324</td>
-                                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing.</td>
+                                            <td>Conferencia 3.</td>
                                             <td>09:30 AM</td>
                                         </tr>
                                         <tr>
                                             <td>3323</td>
-                                            <td>Lorem ipsum dolor sit amet.</td>
+                                            <td>Conferencia 4.</td>
                                             <td>12:00 PM</td>
                                         </tr>
                                         <tr>
                                             <td>3322</td>
-                                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing.</td>
+                                            <td>Conferencia 5.</td>
                                             <td>01:00 PM</td>
                                         </tr>
                                         <tr>
                                             <td>3321</td>
-                                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                                            <td>Conferencia 6.</td>
                                             <td>01:40 PM</td>
                                         </tr>
                                         <tr>
                                             <td>3320</td>
-                                            <td>Lorem ipsum dolor sit.</td>
+                                            <td>Conferencia 7.</td>
                                             <td>02:15 PM</td>
                                         </tr>
                                         <tr>
                                             <td>3319</td>
-                                            <td>Lorem ipsum dolor sit amet consectetur. </td>
+                                            <td>Conferencia 8.</td>
                                             <td>03:00 PM</td>
                                         </tr>
                                     </tbody>
@@ -186,7 +187,7 @@ Inicio
                 </div>
                 <!-- /.panel-body -->
             </div>
-            
+
         </div>
         <!-- /.col-lg-8 -->
         <div class="col-lg-4">
@@ -203,7 +204,7 @@ Inicio
                             </span>
                         </a>
                         <a href="#" class="list-group-item">
-                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                <i class="fas fa-user fa-fw"></i> 3 Nuevas solicitudes
                             <span class="pull-right text-muted small"><em>12 minutes ago</em>
                             </span>
                         </a>
@@ -259,7 +260,8 @@ Inicio
                     <ul class="chat">
                         <li class="left clearfix">
                             <span class="chat-img pull-left">
-                                <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px" height="50px" style="background: rgb(218,255,254)" />
+                                <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px"
+                                    height="50px" style="background: rgb(218,255,254)" />
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">
@@ -276,7 +278,8 @@ Inicio
                         </li>
                         <li class="right clearfix">
                             <span class="chat-img pull-right">
-                                <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px" height="50px" style="background: rgb(232,197,144)" />
+                                <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px"
+                                    height="50px" style="background: rgb(232,197,144)" />
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">
@@ -292,7 +295,8 @@ Inicio
                         </li>
                         <li class="left clearfix">
                             <span class="chat-img pull-left">
-                                    <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px" height="50px" style="background: rgb(162,147,232)" />
+                                <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px"
+                                    height="50px" style="background: rgb(162,147,232)" />
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">
@@ -308,7 +312,8 @@ Inicio
                         </li>
                         <li class="right clearfix">
                             <span class="chat-img pull-right">
-                                    <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px" height="50px" style="background: rgb(232,197,144)" />
+                                <img src="{{ asset('img/user.png') }}" alt="User Avatar" class="img-circle" width="50px"
+                                    height="50px" style="background: rgb(232,197,144)" />
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">

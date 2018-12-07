@@ -21,6 +21,13 @@ Route::get('/admin/grafico/otros', ['as'=>'grafOtr','uses'=>'PagesController@gra
 Route::get('/admin/participantes', ['as'=>'participantes','uses'=>'PagesController@participante']);
 Route::get('/admin/formularios', ['as'=>'formularios','uses'=>'PagesController@formularios']);
 Route::get('/admin/configuraciones', ['as'=>'configuraciones','uses'=>'PagesController@configuraciones']);
+Route::get('/admin/eventos', ['as'=>'conferencias','uses'=>'PagesController@conferencias']);
+Route::get('/admin/solicitudes', ['as'=>'solicitudes','uses'=>'PagesController@solicitudes']);
+Route::get('/admin/crear-evento', ['as'=>'creare','uses'=>'PagesController@creare']);
+Route::get('/admin/prox-eventos', ['as'=>'proxevents','uses'=>'PagesController@proxevents']);
+
+
+Route::get('/user',['as'=>'inicioUser','uses'=>'UsersController@index']);
 
 
 Route::get('/login',['as'=>'login','uses'=>'PagesController@login']);

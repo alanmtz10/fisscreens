@@ -11,6 +11,7 @@
     <title>@yield('titulo')</title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset("/vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+    
     <!-- MetisMenu CSS -->
     <link href="{{ asset("/vendor/metisMenu/metisMenu.min.css") }}" rel="stylesheet">
     <!-- Custom CSS -->
@@ -18,6 +19,7 @@
     <!-- Morris Charts CSS -->
     <link href="{{ asset("/vendor/morrisjs/morris.css") }}" rel="stylesheet">
     <!-- Custom Fonts -->
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link href="{{ asset("/vendor/font-awesome/css/font-awesome.min.css") }}" rel="stylesheet" type="text/css">
@@ -45,7 +47,7 @@
                 </button>
                 <img src="{{ asset('img/logo.png') }}" alt="" width="45px" height="45px" stye="display: inline-block; text-align:center">
                 <a class="navbar-brand" href="{{ route('inicio') }}">
-                       
+
                     Practi Event
                 </a>
 
@@ -88,7 +90,7 @@
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil de usuario</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>
+                    <li><a href="{{ route('configuraciones') }}"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>
                         </li>
                         <li class="divider"></li>
                         <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesion</a>
@@ -108,8 +110,29 @@
                             <a href="{{ route('inicio') }}"><i class="fas fa-home"></i> Inicio</a>
                         </li>
                         <li>
-                            <a href="{{ route('participantes') }}"><i class="fas fa-users"></i> Participantes</a>
+                            <a href="#"><i class="fas fa-users"></i> Participantes<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{ route('participantes') }}">Inscritos</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('solicitudes') }}">Solicitudes</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
                         </li>
+                        <li>
+                                <a href="#"><i class="fas fa-chalkboard-teacher"></i> Eventos<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                    <a href="{{ route('creare') }}">Crear evento</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('proxevents') }}">Próximos eventos</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
                         <li>
                             <a href="{{ route('formularios') }}"><i class="fa fa-edit fa-fw"></i> Formularios</a>
                         </li>

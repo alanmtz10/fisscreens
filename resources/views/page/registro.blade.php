@@ -46,6 +46,9 @@
                                 
                             </div>
                             <div class="form-row">
+                                
+                            </div>
+                            <div class="form-row">
                                 <div class="col-lg-12 justify-content-center">
                                     <input name="" id="" class="btn btn-sm btn-primary" type="button" value="Guardar">
                                 </div>

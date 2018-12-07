@@ -40,8 +40,24 @@ class PagesController extends Controller
         if($request->email == 'admin'){
             return view('panel_admin.index');
         }else{
-            return view('user.index');
+            return redirect('/');
         }
+    }
+
+    public function conferencias(){
+        return view('panel_admin.conferencias');
+    }
+
+    public function solicitudes(){
+        return view('panel_admin.solicitudes');
+    }
+
+    public function creare(){
+        return view('panel_admin.crear');
+    }
+
+    public function proxevents(){
+        return view('panel_admin.proxe');
     }
 
 }

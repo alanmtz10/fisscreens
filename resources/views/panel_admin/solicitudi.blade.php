@@ -1,7 +1,7 @@
-@extends('user.layout')
+@extends('panel_admin.layout')
 
 @section('titulo')
-    Inicio
+    
 @endsection
 
 @section('contenido')

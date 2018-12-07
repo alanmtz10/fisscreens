@@ -44,7 +44,7 @@
                     <a class="nav-link" href="#">Información</a>
                 </li>
                 <li class="nav-item mr-sm-2">
-                <a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a>
+                <a class="nav-link" href="{{ route('login') }}">Cerrar sesión</a>
                 </li>
             </ul>
         </div>
