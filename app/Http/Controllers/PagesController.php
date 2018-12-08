@@ -7,32 +7,16 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index(){
-        return view('panel_admin.index');
+        return view('page.index');
     }
 
-    public function grafLinea(){
-        return view('panel_admin.flot');
+    public function registro(){
+        return view('page.registro');
     }
 
-    public function grafOtr(){
-        return view('panel_admin.morris');
-    }
-
-    public function participante(){
-        return view('panel_admin.participante');
-    }
-
-    public function formularios(){
-        return view('panel_admin.forms');
-    }
-
-    public function configuraciones(){
-        return view('panel_admin.configuraciones');
-
-    }
-
+    
     public function login(){
-        return view('panel_admin.login');
+        return view('page.login');
 
     }
 
@@ -44,20 +28,5 @@ class PagesController extends Controller
         }
     }
 
-    public function conferencias(){
-        return view('panel_admin.conferencias');
-    }
-
-    public function solicitudes(){
-        return view('panel_admin.solicitudes');
-    }
-
-    public function creare(){
-        return view('panel_admin.crear');
-    }
-
-    public function proxevents(){
-        return view('panel_admin.proxe');
-    }
 
 }
