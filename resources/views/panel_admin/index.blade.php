@@ -265,7 +265,7 @@ Panel de administración
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">
-                                    <strong class="primary-font">Ana Lopez</strong>
+                                    <strong class="primary-font">Ana López</strong>
                                     <small class="pull-right text-muted">
                                         <i class="fa fa-clock-o fa-fw"></i> Hace 12 minutos
                                     </small>
@@ -300,7 +300,7 @@ Panel de administración
                             </span>
                             <div class="chat-body clearfix">
                                 <div class="header">
-                                    <strong class="primary-font">Ana Lopez</strong>
+                                    <strong class="primary-font">Ana López</strong>
                                     <small class="pull-right text-muted">
                                         <i class="fa fa-clock-o fa-fw"></i>Hace 14 minutos</small>
                                 </div>

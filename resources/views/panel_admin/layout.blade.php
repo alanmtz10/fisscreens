@@ -74,7 +74,7 @@
                         <li>
                             <a href="#">
                                 <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 Nuevos seguidores
+                                    <i class="fa fa-twitter fa-fw"></i> 3 Nuevos solicitudes
                                     <span class="pull-right text-muted small">Hace 12 minutos</span>
                                 </div>
                             </a>

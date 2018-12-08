@@ -60,23 +60,8 @@ Graficos de linea
             </div>
             <!-- /.panel -->
         </div>
-        <div class="col-lg-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Grafico 2
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div class="flot-chart">
-                        <div class="flot-chart-content" id="flot-line-chart-moving"></div>
-                    </div>
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-        </div>
         <!-- /.col-lg-6 -->
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Grafico 3

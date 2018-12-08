@@ -30,6 +30,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+    
+    </style>
 
 </head>
 
@@ -58,7 +61,7 @@
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Iniciar Sesion</button>
                                 <br>
                                 <a href="{{ route('inicioPage') }}">Regresar al inicio</a>
-                                <a href="{{ route('inicioPage') }}" style="margin-left:75 px">Olvide mi contraseña</a>
+                                <a href="{{ route('inicioPage') }}" style="margin-left: 75px">Olvide mi contraseña</a>
                             </fieldset>
                         </form>
                     </div>

@@ -40,9 +40,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('registro') }}">Registro</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Información</a>
-                </li>
                 <li class="nav-item mr-sm-2">
                 <a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a>
                 </li>

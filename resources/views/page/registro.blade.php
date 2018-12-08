@@ -10,6 +10,14 @@ Registro
         <div class="col-lg-12">
             <form action="">
                 <div class="form-row">
+                    <label for="" class="radio-inline" >
+                        <input type="radio" name="radios" id="" value="1" onchange="fun(this)">Usuario
+                    </label>
+                    <label for="" class="radio-inline" >
+                        <input type="radio" name="radios" id="" value="2" onchange="fun(this)">Participante
+                    </label>
+                </div>
+                <div class="form-row">
                     <div class="form-group col-lg-6">
                         <label>Nombre: </label>
                         <input class="form-control" placeholder="">
@@ -46,8 +54,19 @@ Registro
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-6">
+                        <label>Contraseña: </label>
+                        <input type="password" class="form-control" placeholder="">
+                    </div>
+
+                    <div class="form-group col-lg-6">
+                        <label>Confirmar contraseña: </label>
+                        <input type="password" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-6">
                         <label>Evento: </label><br>
-                        <select name="" id="" class="form-control">
+                        <select name="" id="evento" class="form-control">
                             <option value="1">Evento 1</option>
                             <option value="2">Evento 2</option>
                             <option value="3">Evento 3</option>
@@ -56,7 +75,7 @@ Registro
                     </div>
                     <div class="form-group col-lg-6">
                         <label>Paquete: </label><br>
-                        <select name="" id="" class="form-control">
+                        <select name="" id="paquete" class="form-control">
                             <option value="1">Paquete 1</option>
                             <option value="2">Paquete 2</option>
                             <option value="3">Paquete 3</option>
@@ -81,3 +100,18 @@ Registro
     </div>
 </div>
 @endsection
+
+<script>
+function fun(e){
+    var v = e.value;
+    console.log(v);
+    if(v==1){
+        document.getElementById('evento').disabled=true;
+        document.getElementById('paquete').disabled=true;
+    }else{
+        document.getElementById('evento').disabled=false;
+        document.getElementById('paquete').disabled=false;
+    }
+
+}
+</script>
