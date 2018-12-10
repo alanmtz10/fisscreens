@@ -17,8 +17,6 @@
     <link href="{{ asset("/vendor/metisMenu/metisMenu.min.css") }}" rel="stylesheet">
     <!-- Custom CSS -->
     <link href=" {{ asset("/dist/css/sb-admin-2.css") }}" rel="stylesheet">
-    <!-- Morris Charts CSS -->
-    <link href="{{ asset("/vendor/morrisjs/morris.css") }}" rel="stylesheet">
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
@@ -61,7 +59,7 @@
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Iniciar Sesion</button>
                                 <br>
                                 <a href="{{ route('inicioPage') }}">Regresar al inicio</a>
-                                <a href="{{ route('inicioPage') }}" style="margin-left: 75px">Olvide mi contraseña</a>
+                                <a href="{{ route('recPass') }}" style="margin-left: 75px">Olvide mi contraseña</a>
                             </fieldset>
                         </form>
                     </div>
@@ -78,19 +76,6 @@
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src=" {{ asset("/vendor/metisMenu/metisMenu.min.js") }}"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src=" {{ asset("/vendor/raphael/raphael.min.js") }}"></script>
-    <script src="{{ asset("/vendor/morrisjs/morris.min.js") }}"></script>
-    <script src=" {{ asset("/data/morris-data.js") }} "></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="{{ asset('/vendor/flot/excanvas.min.js') }}"></script>
-    <script src="{{ asset('/vendor/flot/jquery.flot.js') }}"></script>
-    <script src="{{ asset("/vendor/flot/jquery.flot.pie.js") }}"></script>
-    <script src="{{ asset("/vendor/flot/jquery.flot.resize.js") }}"></script>
-    <script src="{{ asset("/vendor/flot/jquery.flot.time.js") }}"></script>
-    <script src="{{ asset("/vendor/flot-tooltip/jquery.flot.tooltip.min.js") }}"></script>
-    <script src="{{ asset("/data/flot-data.js") }}"></script>
 
 </body>
 

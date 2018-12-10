@@ -13,10 +13,13 @@
 
 
 // RUTAS PRINCIPALES
-Route::get('/login',['as'=>'login','uses'=>'PagesController@login']);
-Route::post('/auth',['as'=>'auth','uses'=>'PagesController@auth']);
 Route::get('/',['as'=>'inicioPage','uses'=>'PagesController@index']);
 Route::get('/registro',['as'=>'registro','uses'=>'PagesController@registro']);
+Route::get('/login',['as'=>'login','uses'=>'PagesController@login']);
+Route::post('/auth',['as'=>'auth','uses'=>'PagesController@auth']);
+Route::get('/recuperar-cuenta',['as'=>'recPass','uses'=>'PagesController@olvideCont']);
+
+
 
 
 
@@ -34,6 +37,7 @@ Route::get('/admin/prox-eventos', ['as'=>'proxevents','uses'=>'PanelAdminControl
 
 //RUTAS USUARIO
 Route::get('/user',['as'=>'inicioUser','uses'=>'UsersController@index']);
+Route::get('/user/info',['as'=>'infoConf','uses'=>'UsersController@info']);
 
 
 

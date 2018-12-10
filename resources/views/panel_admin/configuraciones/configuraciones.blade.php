@@ -28,52 +28,35 @@ Configuraciones
                                         <label>¿Crear un respaldo de la base de datos?: </label><br>
                                         <div class="radio-inline">
                                             <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="1" onchange="oncl(this)"
-                                                    checked>Si
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="1"
+                                                    onchange="oncl(this)" checked>Si
                                             </label>
                                         </div>
                                         <div class="radio-inline">
                                             <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="2" onchange="oncl(this)">No
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="2"
+                                                    onchange="oncl(this)">No
                                             </label>
                                         </div>
                                     </div>
                                     <div class="form-group col-lg-6">
                                         <label>¿Cada cuantos días?:</label>
-                                        <input id="dias" type="number" class="form-control">
+                                        <input id="dias" type="number" min="1" max="30" class="form-control">
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Idioma
-                </div>
-                <div class="panel-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <form role="form">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="">Idioma: </label>
-                                        <select class="form-control" name="" id="">
-                                            <option value="1">Español</option>
-                                            <option value="1">Ingles</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </form>
+                            <div class="alert alert-warning" role="alert">
+                                No aplica en las siguientes condiciones: 
+                                <ul>
+                                    <li>El sistema no está en funcionamiento.</li>
+                                    <li>Se presentan errores en el sistema.</li>
+                                    <li>El servidor donde se aloja el sistema no está en correcto funcionamiento.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
@@ -84,20 +67,21 @@ Configuraciones
         </div>
         <!-- /.col-lg-12 -->
     </div>
+    
     <!-- /.row -->
 </div>
 </div>
 @endsection
 
 <script>
-    
-    function oncl(radio){
+    function oncl(radio) {
         console.log(radio.value)
-        if(radio.value==2){
+        if (radio.value == 2) {
             document.getElementById('dias').disabled = true;
-            document.getElementById('dias').value = ""; 
-        }else{
+            document.getElementById('dias').value = "";
+        } else {
             document.getElementById('dias').disabled = false;
         }
     }
+
 </script>

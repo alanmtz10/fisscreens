@@ -47,9 +47,15 @@
         </div>
     </nav>
 
-    <script src="{{ asset('bsjq/js/bootstrap.min.js') }}"></script>
 
     @yield('contenido')
+
+
+    
+    <script src="{{ asset('bsjq/js/jquery.js') }}"></script>
+    <script src="{{ asset('bsjq/js/bootstrap.min.js') }}"></script>
+
+    @yield('scripts')
 
 </body>
 

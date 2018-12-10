@@ -40,7 +40,7 @@ Próximos eventos
                                     <td>Lunes 06/12/18 – 08:00</td>
                                     <td>Sala 2</td>
                                     <td>
-                                        <a name="" id="" class="btn btn-primary btn-sm" href="#" role="button">Ver</a>
+                                        <a name="" id="" class="btn btn-primary btn-sm" href="{{ route('infoConf') }}" role="button">Ver</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -50,7 +50,7 @@ Próximos eventos
                                     <td>Lunes 06/12/18 – 10:00</td>
                                     <td>Sala 3</td>
                                     <td>
-                                        <a name="" id="" class="btn btn-primary btn-sm" href="#" role="button">Ver</a>
+                                        <a name="" id="" class="btn btn-primary btn-sm" href="{{ route('infoConf') }}" role="button">Ver</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -60,7 +60,7 @@ Próximos eventos
                                     <td>Lunes 06/12/18 – 13:00</td>
                                     <td>Sala 4</td>
                                     <td>
-                                        <a name="" id="" class="btn btn-primary btn-sm" href="#" role="button">Ver</a>
+                                        <a name="" id="" class="btn btn-primary btn-sm" href="{{ route('infoConf') }}" role="button">Ver</a>
                                     </td>
                                 </tr>
                             </tbody>

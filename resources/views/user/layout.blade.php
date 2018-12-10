@@ -40,6 +40,7 @@
             overflow-y: auto;
         }
     </style>
+    @yield('estilos')
 </head>
 
 <body>

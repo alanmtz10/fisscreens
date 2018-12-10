@@ -115,9 +115,6 @@
                                 <li>
                                     <a href="{{ route('participantes') }}">Inscritos</a>
                                 </li>
-                                <li>
-                                    <a href="{{ route('solicitudes') }}">Solicitudes</a>
-                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

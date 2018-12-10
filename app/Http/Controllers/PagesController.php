@@ -20,9 +20,13 @@ class PagesController extends Controller
 
     }
 
+    public function olvideCont(){
+        return view('page.olvideCont');
+    }
+
     public function auth(Request $request){
         if($request->email == 'admin'){
-            return view('panel_admin.index');
+            return redirect('/admin');
         }else{
             return redirect('/user'); 
         }

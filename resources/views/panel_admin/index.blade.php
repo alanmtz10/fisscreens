@@ -50,7 +50,7 @@ Panel de administración
                         </div>
                     </div>
                 </div>
-                <a href="#">
+            <a href="{{ route("proxevents") }}">
                     <div class="panel-footer">
                         <span class="pull-left">Ver detalles</span>
                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -72,7 +72,7 @@ Panel de administración
                         </div>
                     </div>
                 </div>
-                <a href="#">
+                <a href="{{ route("participantes") }}">
                     <div class="panel-footer">
                         <span class="pull-left">Ver detalles</span>
                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -110,117 +110,6 @@ Panel de administración
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <i class="fa fa-bar-chart-o fa-fw"></i> Participantes por conferencia
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div id="morris-area-chart"></div>
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <i class="fas fa-business-time"></i> Conferencias del día
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Sala</th>
-                                            <th>Descripcion</th>
-                                            <th>Hora</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>3326</td>
-                                            <td>Conferencia 1.</td>
-                                            <td>08:00 AM</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3325</td>
-                                            <td>Conferencia 2.</td>
-                                            <td>08:30 AM</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3324</td>
-                                            <td>Conferencia 3.</td>
-                                            <td>09:30 AM</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3323</td>
-                                            <td>Conferencia 4.</td>
-                                            <td>12:00 PM</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3322</td>
-                                            <td>Conferencia 5.</td>
-                                            <td>01:00 PM</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3321</td>
-                                            <td>Conferencia 6.</td>
-                                            <td>01:40 PM</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3320</td>
-                                            <td>Conferencia 7.</td>
-                                            <td>02:15 PM</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3319</td>
-                                            <td>Conferencia 8.</td>
-                                            <td>03:00 PM</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.panel-body -->
-            </div>
-
-        </div>
-        <!-- /.col-lg-8 -->
-        <div class="col-lg-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <i class="fa fa-bell fa-fw"></i> Panel de notificaciones
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-comment fa-fw"></i> Nuevo mensaje
-                            <span class="pull-right text-muted small"><em>Hace 4 minutos</em>
-                            </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                                <i class="fas fa-user fa-fw"></i> 3 Nuevas solicitudes
-                            <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                            </span>
-                        </a>
-
-                    </div>
-                    <!-- /.list-group -->
-                    <a href="#" class="btn btn-default btn-block">Ver todas las notificaciones</a>
-                </div>
-                <!-- /.panel-body -->
-            </div>
-            <!-- /.panel -->
-
-            <!-- /.panel -->
-            <div class="chat-panel panel panel-default">
-                <div class="panel-heading">
-                    <i class="fa fa-comments fa-fw"></i> Chat
                     <div class="btn-group pull-right">
                         <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-chevron-down"></i>
@@ -254,6 +143,168 @@ Panel de administración
                             </li>
                         </ul>
                     </div>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div id="morris-area-chart"></div>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fas fa-business-time"></i> Conferencias del día
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div style="height: 10px; width: 10px;" class="bg-success"></div>
+                            Conferencias completadas
+                        </div>
+                        <div class="col-lg-3">
+                            <div style="height: 10px; width: 10px;" class="bg-primary"></div>
+                            Conferencia en curso
+                        </div>
+                        <div class="col-lg-3">
+                            <div style="height: 10px; width: 10px;" class="bg-warning"></div>
+                            Próximas conferencias
+                        </div>
+                        <div class="col-lg-3">
+                            <div style="height: 10px; width: 10px;" class="bg-danger"></div>
+                            Conferencias canceladas
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sala</th>
+                                            <th>Descripcion</th>
+                                            <th>Hora</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-success">
+                                            <td>3326</td>
+                                            <td>Conferencia 1.</td>
+                                            <td>08:00 AM</td>
+                                            <td>
+                                                <a href="{{ route("infoConf") }}" type="button" class="btn btn-sm btn-primary">Ver
+                                                    detalles</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-success">
+                                            <td>3325</td>
+                                            <td>Conferencia 2.</td>
+                                            <td>08:30 AM</td>
+                                            <td>
+                                                <a href="{{ route("infoConf") }}" type="button" class="btn btn-sm btn-primary">Ver
+                                                    detalles</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-success">
+                                            <td>3324</td>
+                                            <td>Conferencia 3.</td>
+                                            <td>09:30 AM</td>
+                                            <td>
+                                                <a href="{{ route("infoConf") }}" type="button" class="btn btn-sm btn-primary">Ver
+                                                    detalles</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-primary">
+                                            <td>3323</td>
+                                            <td>Conferencia 4.</td>
+                                            <td>12:00 PM</td>
+                                            <td>
+                                                <a href="{{ route("infoConf") }}" type="button" class="btn btn-sm btn-primary">Ver
+                                                    detalles</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-warning">
+                                            <td>3322</td>
+                                            <td>Conferencia 5.</td>
+                                            <td>01:00 PM</td>
+                                            <td>
+                                                <a href="{{ route("infoConf") }}" type="button" class="btn btn-sm btn-primary">Ver
+                                                    detalles</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-danger">
+                                            <td>3321</td>
+                                            <td>Conferencia 6.</td>
+                                            <td>01:40 PM</td>
+                                            <td>
+                                                <a href="{{ route("infoConf") }}" type="button" class="btn btn-sm btn-primary">Ver
+                                                    detalles</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-warning">
+                                            <td>3320</td>
+                                            <td>Conferencia 7.</td>
+                                            <td>02:15 PM</td>
+                                            <td>
+                                                <a href="{{ route("infoConf") }}" type="button" class="btn btn-sm btn-primary">Ver
+                                                    detalles</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-warning">
+                                            <td>3319</td>
+                                            <td>Conferencia 8.</td>
+                                            <td>03:00 PM</td>
+                                            <td>
+                                                <a href="{{ route("infoConf") }}" type="button" class="btn btn-sm btn-primary">Ver
+                                                    detalles</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bell fa-fw"></i> Panel de notificaciones
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i> Nuevo mensaje
+                            <span class="pull-right text-muted small"><em>Hace 4 minutos</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fas fa-user fa-fw"></i> 3 Nuevas solicitudes
+                            <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                            </span>
+                        </a>
+
+                    </div>
+                    <!-- /.list-group -->
+                    <a href="#" class="btn btn-default btn-block">Ver todas las notificaciones</a>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+
+            <!-- /.panel -->
+            <div class="chat-panel panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-comments fa-fw"></i> Mensajes instantáneos
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
