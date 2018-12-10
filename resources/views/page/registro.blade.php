@@ -13,7 +13,7 @@ Registro
                     Formulario de registro
                 </div>
                 <div class="card-body">
-                    <form action="">
+                    <form action="{{ route('metodop') }}" method="GET">
                         <div class="form-row">
                             <div class="form-group col-lg-12">
                                 <label for="">Tipo de registro: </label><br>
@@ -103,15 +103,15 @@ Registro
                                 <input type="file" class="form-control-file" accept=".png, .jpeg, .jpg">
                             </div>
                         </div>
-                        <div class="form-row">
+                        <div class="form-row" id="pago">
                             <div class="col-lg-12">
-                                <h3><span class="text-muted">Total: </span>$1500</h3>
+                                <h3 id="precio"><span class="text-muted">Total: </span >$123</h3>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-12">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="term">
+                                    <input type="checkbox" class="custom-control-input" id="term" onchange="box(this)">
                                     <label class="custom-control-label" for="term">
                                         <a href="" data-toggle="modal" data-target="#exampleModal">Acepto los términos
                                             y condiciones</a>
@@ -153,7 +153,7 @@ Registro
                         </div>
                         <div class="form-row">
                             <div class="col-lg-12 justify-content-center">
-                                <input name="" id="" class="btn btn-sm btn-primary" type="button" value="Guardar">
+                                <input name="" id="guardar" class="btn btn-sm btn-primary" type="submit" value="Guardar" disabled>
                             </div>
                         </div>
                     </form>
@@ -170,6 +170,7 @@ Registro
         var v = e.value;
         console.log(v);
         if (v == 1) {
+            document.getElementById('precio').innerHTML = '<span class="text-muted">Total: </span >$3333';
             document.getElementById('evento').disabled = true;
             document.getElementById('paquete').disabled = true;
         } else {
@@ -177,6 +178,15 @@ Registro
             document.getElementById('paquete').disabled = false;
         }
 
+    }
+
+    function box(e){
+        var val = e.checked;
+        if(val==true){
+            document.getElementById("guardar").disabled=false;
+        }else{
+            document.getElementById("guardar").disabled=true;
+        }
     }
 
 </script>

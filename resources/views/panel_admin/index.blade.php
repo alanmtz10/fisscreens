@@ -115,37 +115,20 @@ Panel de administración
                             <i class="fa fa-chevron-down"></i>
                         </button>
                         <ul class="dropdown-menu slidedown">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-refresh fa-fw"></i> Refresh
-                                </a>
+                            <li onclick="grafica(this)">
+                                    Pastel
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-check-circle fa-fw"></i> Available
-                                </a>
+                            <li onclick="grafica(this)">
+                                    Barras
                             </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-times fa-fw"></i> Busy
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-clock-o fa-fw"></i> Away
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-sign-out fa-fw"></i> Sign Out
-                                </a>
+                            <li onclick="grafica(this)">
+                                    Histogramas
                             </li>
                         </ul>
                     </div>
                 </div>
                 <!-- /.panel-heading -->
-                <div class="panel-body">
+                <div class="panel-body" id="gg">
                     <div id="morris-area-chart"></div>
                 </div>
                 <!-- /.panel-body -->
@@ -402,4 +385,16 @@ Panel de administración
 <!-- /#page-wrapper -->
 
 </div>
+@endsection
+
+@section('script')
+    <script>
+        function grafica(e){
+            var v = e.innerHTML;
+            console.log(document.getElementById('gg').innerHTML);
+            if(v=="Pastel"){
+                document.getElementById('gg').innerHTML = '<div class="flot-chart"><div class="flot-chart-content" id="flot-pie-chart"></div></div>'
+            }
+        }
+    </script>
 @endsection

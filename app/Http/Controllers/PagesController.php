@@ -32,5 +32,9 @@ class PagesController extends Controller
         }
     }
 
+    public function pago(){
+        return view('page.pago');
+    }
+
 
 }

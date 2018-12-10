@@ -18,6 +18,7 @@ Route::get('/registro',['as'=>'registro','uses'=>'PagesController@registro']);
 Route::get('/login',['as'=>'login','uses'=>'PagesController@login']);
 Route::post('/auth',['as'=>'auth','uses'=>'PagesController@auth']);
 Route::get('/recuperar-cuenta',['as'=>'recPass','uses'=>'PagesController@olvideCont']);
+Route::get('pago',['as'=>'metodop','uses'=>'PagesController@pago']);
 
 
 
@@ -33,6 +34,7 @@ Route::get('/admin/configuraciones', ['as'=>'configuraciones','uses'=>'PanelAdmi
 Route::get('/admin/solicitudes', ['as'=>'solicitudes','uses'=>'PanelAdminController@solicitudes']);
 Route::get('/admin/crear-evento', ['as'=>'creare','uses'=>'PanelAdminController@creare']);
 Route::get('/admin/prox-eventos', ['as'=>'proxevents','uses'=>'PanelAdminController@proxevents']);
+Route::get('/admin/detalle', ['as'=>'detalle','uses'=>'PanelAdminController@detalle']);
 
 
 //RUTAS USUARIO

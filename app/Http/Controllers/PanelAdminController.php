@@ -44,6 +44,9 @@ class PanelAdminController extends Controller
     public function solicitudes(){
         return view('panel_admin.participantes.solicitudes');
     }
+    public function detalle(){
+        return view('panel_admin.participantes.detalle');
+    }
     //FIN PARTICIPANTES
 
 

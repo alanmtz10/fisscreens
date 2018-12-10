@@ -38,7 +38,7 @@ Participantes
                                 <td class="center">25</td>
                                 <td class="center">Plan 1</td>
                                 <td class="center">
-                                    <button type="button" class="btn  btn-sm btn-primary">Ver</button>
+                                    <a href="{{ route("detalle") }}" type="button" class="btn btn-sm btn-primary">Ver</a>
                                     <button type="button" class="btn  btn-sm btn-success">Editar</button>
                                     <button type="button" class="btn  btn-sm btn-danger">Eliminar</button>
                                 </td>
